@@ -162,4 +162,4 @@ awards:
 
 ## About Me
 
-I’m currently a postdoctoral researcher at Brandeis University (MA, USA), with a focus on data science and applied machine learning and AI. At Brandeis, I develop ML/AI models (deep learning, reinforcement learning) to forecast and control active materials. I also have extensive experience working with time series data in dynamical systems.
+I’m currently a postdoctoral researcher at Brandeis University (MA, USA), with a focus on data science and applied machine learning and AI. At Brandeis, I develop ML/AI models (deep learning, reinforcement learning) to forecast and control active materials. I also have extensive experience working with time series data in dynamical systems, and training reinforcement learning with human feedback.
