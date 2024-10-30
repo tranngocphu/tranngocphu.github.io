@@ -21,15 +21,15 @@ sections:
     design:
       css_class: dark
       background:
-        color: black
+        color: white
         image:
           # Add your image background to `assets/media/`.
-          filename: stacked-peaks.svg
+          filename: bg.jpg
           filters:
-            brightness: 1.0
+            brightness: 0.4
           size: cover
           position: center
-          parallax: false
+          parallax: true
   
   # - block: markdown
   #   content:
