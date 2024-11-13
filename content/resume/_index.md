@@ -4,7 +4,7 @@ Data Scientist and Machine Learning Engineer with extensive experience applying 
 
 ### Skills
 
-- **Machine learning**: Genrative AI, Transformers, Computer Vision, Reinforcement Learning, Supervised & Unsupervised Learning
+- **Machine learning**: Generative AI, Transformers, Computer Vision, Reinforcement Learning, Supervised & Unsupervised Learning
 - **Programming Frameworks**: Linux | Python | SQL | Scikit-learn | PyTorch | Ray | Weights and Biases | MLFlow | Git | DVC | CI/CD | AWS (EC2 & SageMaker) | FastAPI | Streamlit | Docker
 
 ### Certificates
