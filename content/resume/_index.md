@@ -1,11 +1,11 @@
 ### Phu Tran, PhD
 
-Data Scientist and Machine Learning Engineer with extensive experience applying data science and machine learning across diverse domains. Skilled in problem solving, data-driven problem formulation, designing and implementing ETL pipelines, and developing a range of ML algorithms, including supervised, unsupervised, and reinforcement learning. Familiar with cloud model deployment, CI/CD pipelines, and experience working with interdisciplinary teams, with a strong ability to communicate complex technical concepts clearly.
+Data Scientist and AI Engineer with extensive experience applying data science and ML/AI across diverse domains. Skilled in problem solving, data-driven problem formulation, designing and implementing ETL pipelines, and developing a range of ML algorithms, including supervised, unsupervised, and reinforcement learning. Familiar with full-stack application development and cloud deployment with CI/CD pipelines. Eexperience working with interdisciplinary teams, with a strong ability to communicate complex technical concepts clearly.
 
 ### Skills
 
-- **Machine learning**: Generative AI, Transformers, Computer Vision, Reinforcement Learning, Supervised & Unsupervised Learning
-- **Programming Frameworks**: Linux | Python | SQL | Scikit-learn | PyTorch | Ray | Weights and Biases | MLFlow | Git | DVC | CI/CD | AWS (EC2 & SageMaker) | FastAPI | Streamlit | Docker
+- **Machine learning**: Generative AI, Transformers & LLMs, Computer Vision, Reinforcement Learning, Supervised & Unsupervised Learning
+- **Programming Frameworks**: FastAPI | Streamlit | Docker | NextJS | Nodejs | BigQuery | Google Cloud Platform | LangChain & LangGraph | Linux | Python | SQL | Scikit-learn | PyTorch | Ray | Weights and Biases | MLFlow | Git | DVC | CI/CD 
 
 ### Certificates
 
@@ -13,8 +13,16 @@ Data Scientist and Machine Learning Engineer with extensive experience applying 
 
 ### Experiences
 
+#### Research Associate (AI Engineer), Mayo Clinic
+##### Scottsdale, AZ | June 2025 – present
+
+- Research, build, and deploy end-to-end agentic AI systems that retrieve patient EHR and respond to questions about a patient in different contexts.
+- Develop AI-assisted solution for clinical trial matching and automation of cancer registry patient enrollment.
+- Build scalable backend and frontend with UX/UI
+- Tech stack: Azure OpenAI and Google Gemini APIs, Python FastAPI, NextJS, NodeJS, Docker, Google Cloud Platform (Vertex AI, Cloud Run, Cloud Build, BigQuery, Cloud SQL), LangChain, LangGraph
+
 #### Postdoctoral Associate, Brandeis University
-##### Waltham, MA | Feb 2022 – present
+##### Waltham, MA | Feb 2022 – Apr 2025
 
 - Lead multiple research projects to develop ML/AI models to forecast and control bio-inspired materials.
 - Developed deep learning model (CNN, RNN) to measure velocities of object in experimental videos, significantly outperform existing rule-based method.
