@@ -20,11 +20,11 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Postdoctoral Associate
+role: Research Associate/AI Engineer
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Brandeis University
+  - name: Mayo Clinic Arizona
     # url: https://openai.com/
 
 # Social network links
@@ -47,7 +47,7 @@ profiles:
   #   url: https://orcid.org/
 
 interests:
-  - Data Science
+  - Data Science/AI in Healthcare
   - Artificial Intelligence
   - Applied Machine Learning    
 
@@ -162,4 +162,8 @@ awards:
 
 ## About Me
 
-I’m currently a postdoctoral researcher at Brandeis University (MA, USA), with a focus on data science and applied machine learning and AI. At Brandeis, I develop ML/AI models (deep learning, reinforcement learning) to forecast and control active materials. I also have extensive experience working with time series data in dynamical systems, and training reinforcement learning with human feedback.
+I'm currently a Research Associate (AI Engineer) at Mayo Clinic (Scottsdale, AZ), where I research, build, and deploy end-to-end AI (LLM-based) systems that streamline clinical workflows and improve patient outcomes. My role focuses on the full AI engineering lifecycle, from problem formulation and model development to deployment, applying AI to solve real-world healthcare challenges.
+
+Previously, I was a postdoctoral researcher at Brandeis University (Waltham, MA), where I developed ML/AI models (deep learning, reinforcement learning) to forecast and control active materials. 
+
+I bring extensive experience in AI/ML across diverse domains, including time series analysis, computer vision, deep learning, reinforcement learning with human feedback, and agentic AI, with a proven ability to translate complex problems into deployable AI solutions.
