@@ -43,6 +43,9 @@ profiles:
     url: https://www.linkedin.com/in/phungoctran
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=-fjvA6QAAAAJ&sortby=pubdate
+  - icon: academicons/cv
+    url: /uploads/PhuTran_Resume.pdf
+    label: Download Resume
   # - icon: academicons/orcid
   #   url: https://orcid.org/
 

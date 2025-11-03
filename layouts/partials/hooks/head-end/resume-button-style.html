@@ -1,0 +1,33 @@
+<style>
+/* Make the CV profile link display as a button below the social icons on the author page */
+/* Targets the anchor with ARIA label 'Download Resume' (set via front matter label) */
+
+/* Put the button on its own line and add spacing */
+li > a[aria-label="Download Resume"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.75rem; /* space below icon row */
+  border-radius: 0.5rem;
+  background: var(--color-primary, #10b981);
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: 600;
+}
+
+/* Hide the CV icon if you prefer a clean text-only button */
+li > a[aria-label="Download Resume"] svg {
+  display: none;
+}
+
+/* Add button label if the theme does not render visible text for the link */
+li > a[aria-label="Download Resume"]::after {
+  content: "Download Resume";
+}
+
+/* Try to force the item to wrap to a new row if the social list uses flex */
+li:has(> a[aria-label="Download Resume"]) {
+  flex-basis: 100%;
+}
+</style>
