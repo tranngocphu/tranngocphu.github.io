@@ -1,4 +1,5 @@
 ### Phu Tran, PhD
+[⬇️ PDF resume](/uploads/PhuTran_Resume.pdf)
 
 Data Scientist and AI Engineer with extensive experience applying data science and ML/AI across diverse domains. Skilled in problem solving, data-driven problem formulation, designing and implementing ETL pipelines, and developing a range of ML algorithms, including supervised, unsupervised, and reinforcement learning. Familiar with full-stack application development and cloud deployment with CI/CD pipelines. Experience working with interdisciplinary teams, with a strong ability to communicate complex technical concepts clearly.
 
