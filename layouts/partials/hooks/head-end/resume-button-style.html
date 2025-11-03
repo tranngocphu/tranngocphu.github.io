@@ -15,10 +15,13 @@
   font-weight: 700;
 }
 
-/* Keep icon aligned with text if present */
-.resume-cta .resume-button svg {
-  vertical-align: middle;
-  margin-right: 0.5rem;
+/* Remove any iconography for a simple text button */
+.resume-cta .resume-button svg,
+.resume-cta .resume-button i,
+.resume-cta .resume-button .icon,
+.resume-cta .resume-button .icon-pack,
+.resume-cta .resume-button .sr-only {
+  display: none !important;
 }
 
 /* Fallback styling if JS didn't move the element: still make it look like a button and separate it */
@@ -61,23 +64,13 @@ document.addEventListener('DOMContentLoaded', function () {
   var list = a.closest('ul, ol');
   if (!list || !list.parentNode) return;
 
+  // Normalize: force simple text label and remove any icon children
+  a.textContent = 'View Resume';
+
   // Create wrapper and move the link
   var wrap = document.createElement('div');
   wrap.className = 'resume-cta';
   a.classList.add('resume-button');
-
-  // Ensure there's visible text 'View Resume' next to any icon
-  var hasText = a.textContent && a.textContent.trim().length > 0;
-  if (!hasText) {
-    var span = document.createElement('span');
-    span.textContent = 'View Resume';
-    // If the anchor contains an icon SVG, append text after it
-    a.appendChild(document.createTextNode(' '));
-    a.appendChild(span);
-  } else if (!/View Resume/i.test(a.textContent)) {
-    // Standardize the label if it's something else (e.g., Download Resume)
-    a.textContent = 'View Resume';
-  }
 
   // Move after the list
   wrap.appendChild(a);
