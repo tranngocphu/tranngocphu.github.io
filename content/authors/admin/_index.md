@@ -45,7 +45,7 @@ profiles:
     url: https://scholar.google.com/citations?user=-fjvA6QAAAAJ&sortby=pubdate
   - icon: academicons/cv
     url: /uploads/PhuTran_Resume.pdf
-    label: Download Resume
+    label: View Resume
   # - icon: academicons/orcid
   #   url: https://orcid.org/
 

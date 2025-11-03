@@ -1,14 +1,34 @@
 <style>
-/* Make the CV profile link display as a button below the social icons on the author page */
-/* Targets the anchor with ARIA label 'Download Resume' (set via front matter label) */
+/* Make the Resume link a separate button below connection links */
 
-/* Put the button on its own line and add spacing */
-li > a[aria-label="Download Resume"] {
+/* Primary style for the moved button */
+.resume-cta .resume-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem 0.9rem;
+  margin-top: 0.75rem;
+  border-radius: 0.5rem;
+  background: var(--color-primary, #10b981);
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: 700;
+}
+
+/* Keep icon aligned with text if present */
+.resume-cta .resume-button svg {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* Fallback styling if JS didn't move the element: still make it look like a button and separate it */
+li > a[aria-label="View Resume"],
+li > a[title="View Resume"] {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 0.75rem;
-  margin-top: 0.75rem; /* space below icon row */
+  margin-top: 0.75rem;
   border-radius: 0.5rem;
   background: var(--color-primary, #10b981);
   color: #fff !important;
@@ -16,18 +36,51 @@ li > a[aria-label="Download Resume"] {
   font-weight: 600;
 }
 
-/* Hide the CV icon if you prefer a clean text-only button */
-li > a[aria-label="Download Resume"] svg {
-  display: none;
+/* If there's no visible text, inject the label */
+li > a[aria-label="View Resume"]:not(:has(*:not(svg))),
+li > a[title="View Resume"]:not(:has(*:not(svg))) {
+  position: relative;
 }
-
-/* Add button label if the theme does not render visible text for the link */
-li > a[aria-label="Download Resume"]::after {
-  content: "Download Resume";
-}
-
-/* Try to force the item to wrap to a new row if the social list uses flex */
-li:has(> a[aria-label="Download Resume"]) {
-  flex-basis: 100%;
+li > a[aria-label="View Resume"]:not(:has(*:not(svg)))::after,
+li > a[title="View Resume"]:not(:has(*:not(svg)))::after {
+  content: "View Resume";
+  margin-left: 0.5rem;
+  font-weight: 700;
 }
 </style>
+
+<script>
+// Move the 'View Resume' link out of the social icons list and render it as a separate button below.
+document.addEventListener('DOMContentLoaded', function () {
+  var a = document.querySelector(
+    'a[aria-label="View Resume"], a[title="View Resume"], a[href="/uploads/PhuTran_Resume.pdf"], a[href$="PhuTran_Resume.pdf"]'
+  );
+  if (!a) return;
+
+  // Find the nearest UL/OL that likely contains the social icons
+  var list = a.closest('ul, ol');
+  if (!list || !list.parentNode) return;
+
+  // Create wrapper and move the link
+  var wrap = document.createElement('div');
+  wrap.className = 'resume-cta';
+  a.classList.add('resume-button');
+
+  // Ensure there's visible text 'View Resume' next to any icon
+  var hasText = a.textContent && a.textContent.trim().length > 0;
+  if (!hasText) {
+    var span = document.createElement('span');
+    span.textContent = 'View Resume';
+    // If the anchor contains an icon SVG, append text after it
+    a.appendChild(document.createTextNode(' '));
+    a.appendChild(span);
+  } else if (!/View Resume/i.test(a.textContent)) {
+    // Standardize the label if it's something else (e.g., Download Resume)
+    a.textContent = 'View Resume';
+  }
+
+  // Move after the list
+  wrap.appendChild(a);
+  list.parentNode.insertBefore(wrap, list.nextSibling);
+});
+</script>
