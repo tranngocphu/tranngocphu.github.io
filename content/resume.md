@@ -16,7 +16,8 @@ sections:
       filters:
         folders:
           - resume
-    # design:
+    design:
+      css_class: "max-w-2xl mx-auto"
     #   view: article-grid
     #   fill_image: false
     #   columns: 3
