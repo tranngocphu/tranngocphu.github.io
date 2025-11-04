@@ -6,6 +6,7 @@ type: landing
 design:
   # Section spacing
   spacing: '5rem'
+  css_class: "max-w-2xl mx-auto"
 
 # Page sections
 sections:
@@ -16,8 +17,7 @@ sections:
       filters:
         folders:
           - resume
-    design:
-      css_class: "max-w-2xl mx-auto"
+    # design:
     #   view: article-grid
     #   fill_image: false
     #   columns: 3
