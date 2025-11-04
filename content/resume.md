@@ -6,7 +6,7 @@ type: landing
 design:
   # Section spacing
   spacing: '5rem'
-  css_class: "max-w-4xl mx-auto"
+  css_class: "container mx-auto px-8"
 
 # Page sections
 sections:
